@@ -21,7 +21,7 @@
 
 
 # Wireframe of the headphones project - mobile version (480px)
-![](01_headphones_tablet@2x.png)
+![](01_headphones_mobile@2x.png)
 
 
 # Tasks
