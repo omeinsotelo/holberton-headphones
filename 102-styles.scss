@@ -10,378 +10,451 @@
 9. FOOTER
 */
 
+
 /*** 1. GLOBAL ***/
+
 
 /* Reset / Normalize
   ============================= */
+
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
-  }
-  
-  body {
+}
+
+body {
     margin: 0;
-  }
-  
-  main {
+}
+
+main {
     display: block;
-  }
-  
-  h1 {
+}
+
+h1 {
     font-size: 2em;
-  }
-  
-  hr {
+}
+
+hr {
     box-sizing: content-box;
     height: 0;
     overflow: visible;
-  }
-  
-  pre {
+}
+
+pre {
     font-family: monospace, monospace;
     font-size: 1em;
-  }
-  
-  a {
+}
+
+a {
     background-color: transparent;
-  }
-  
-  abbr[title] {
+}
+
+abbr[title] {
     border-bottom: none;
     text-decoration: underline;
     text-decoration: underline dotted;
-  }
-  
-  b, strong {
+}
+
+b,
+strong {
     font-weight: bolder;
-  }
-  
-  code, kbd, samp {
+}
+
+code,
+kbd,
+samp {
     font-family: monospace, monospace;
     font-size: 1em;
-  }
-  
-  small {
+}
+
+small {
     font-size: 80%;
-  }
-  
-  sub, sup {
+}
+
+sub,
+sup {
     font-size: 75%;
     line-height: 0;
     position: relative;
     vertical-align: baseline;
-  }
-  
-  sub {
+}
+
+sub {
     bottom: -.25em;
-  }
-  
-  sup {
+}
+
+sup {
     top: -.5em;
-  }
-  
-  img {
+}
+
+img {
     border-style: none;
-  }
-  
-  button, input, optgroup, select, textarea {
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
     font-family: inherit;
     font-size: 100%;
     line-height: 1.15;
     margin: 0;
-  }
-  
-  button, input {
+}
+
+button,
+input {
     overflow: visible;
-  }
-  
-  button, select {
+}
+
+button,
+select {
     text-transform: none;
-  }
-  
-  [type=button], [type=reset], [type=submit], button {
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
     -webkit-appearance: button;
-  }
-  
-  [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
+}
+
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner,
+button::-moz-focus-inner {
     border-style: none;
     padding: 0;
-  }
-  
-  [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring, button:-moz-focusring {
+}
+
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring,
+button:-moz-focusring {
     outline: 1px dotted ButtonText;
-  }
-  
-  fieldset {
+}
+
+fieldset {
     padding: .35em .75em .625em;
-  }
-  
-  legend {
+}
+
+legend {
     box-sizing: border-box;
     color: inherit;
     display: table;
     max-width: 100%;
     padding: 0;
     white-space: normal;
-  }
-  
-  progress {
+}
+
+progress {
     vertical-align: baseline;
-  }
-  
-  textarea {
+}
+
+textarea {
     overflow: auto;
-  }
-  
-  [type=checkbox], [type=radio] {
+}
+
+[type=checkbox],
+[type=radio] {
     box-sizing: border-box;
     padding: 0;
-  }
-  
-  [type=number] {
-    &::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
-      height: auto;
+}
+
+[type=number] {
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+        height: auto;
     }
-  }
-  
-  [type=search] {
+}
+
+[type=search] {
     -webkit-appearance: textfield;
     outline-offset: -2px;
-  
     &::-webkit-search-decoration {
-      -webkit-appearance: none;
+        -webkit-appearance: none;
     }
-  }
-  
-  ::-webkit-file-upload-button {
+}
+
+::-webkit-file-upload-button {
     -webkit-appearance: button;
     font: inherit;
-  }
-  
-  details {
+}
+
+details {
     display: block;
-  }
-  
-  summary {
+}
+
+summary {
     display: list-item;
-  }
-  
-  template, [hidden] {
+}
+
+template,
+[hidden] {
     display: none;
-  }
-  
-  /* 2. GENERAL
-    ============================= */
-  
-  * {
+}
+
+
+/* 2. GENERAL
+  ============================= */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  html {
+}
+
+html {
     scroll-behavior: smooth;
-  }
-  
-  .hidden {
+}
+
+.hidden {
     position: absolute;
     top: -500px;
     display: none;
-  }
-  
-  img {
+}
+
+img {
     width: 100%;
     display: block;
     height: auto;
-  }
-  
-  .txtCenter {
+}
+
+.txtCenter {
     text-align: center;
-  }
-  
-  .txtRight {
+}
+
+.txtRight {
     text-align: right;
-  }
-  
-  .txtLeft {
+}
+
+.txtLeft {
     text-align: left;
-  }
-  
-  .txtJustify {
+}
+
+.txtJustify {
     text-align: justify;
-  }
-  
-  ul li {
+}
+
+ul li {
     list-style: none;
-  }
-  
-  .txtlineGeneral {
+}
+
+.txtlineGeneral {
     line-height: 26px;
-  }
-  
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  
-  /* Variables
-    ============================= */
-  
-  :root {
-    --colorWhite:#ffffff;
-    --colorBlack:#000000;
-    --colorHardPink:#FF6565;
-    --colorDeepBlue:#071629;
-    --font-family:'Source Sans Pro', sans-serif;
-    --font-size-bigger:46px;
-    --font-size-small:12px;
-    --font-size-medium:14px;
-    --font-size-p:16px;
-    --font-size-Title-primary:32px;
-    --font-size-Title:18px;
-    --font-weight-regular:400;
-    --font-weight-Semibold:600;
-    --font-weight-bold:700;
-    --line-height-txt:26px;
-    --text-transform:uppercase;
-  }
-  
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  
-  /* ICONOS
+}
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* Variables
   ============================= */
-  
-  @font-face {
+
+:root {
+    --colorWhite: #ffffff;
+    --colorBlack: #000000;
+    --colorHardPink: #FF6565;
+    --colorDeepBlue: #071629;
+    --font-family: 'Source Sans Pro', sans-serif;
+    --font-size-bigger: 46px;
+    --font-size-small: 12px;
+    --font-size-medium: 14px;
+    --font-size-p: 16px;
+    --font-size-Title-primary: 32px;
+    --font-size-Title: 18px;
+    --font-weight-regular: 400;
+    --font-weight-Semibold: 600;
+    --font-weight-bold: 700;
+    --line-height-txt: 26px;
+    --text-transform: uppercase;
+}
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* ICONOS
+  ============================= */
+
+@font-face {
     font-family: 'icomoon';
     src: url('holberton_school-icon/fonts/holberton_school-icon.eot');
     src: url('holberton_school-icon/fonts/holberton_school-icon.eot') format("embedded-opentype"), url('holberton_school-icon/fonts/holberton_school-icon.ttf') format("truetype"), url('holberton_school-icon/fonts/holberton_school-icon.woff') format("woff"), url('holberton_school-icon/fonts/holberton_school-icon.svg') format("svg");
     font-weight: normal;
     font-style: normal;
-  }
-  
-  /* TXT GENERAL
-   ============================= */
-  
-  @font-face {
+}
+
+
+/* TXT GENERAL
+  ============================= */
+
+@font-face {
     font-family: 'SPIN CYCLE';
     src: local("fonts/spincycle_3d_ot.otf") format("opentype");
     src: local("fonts/spincycle_ot.otf") format("opentype");
-  }
-  
-  h1 {
+}
+
+h1 {
     font-family: var(--font-family);
     font-size: var(--font-size-Title-primary);
-  }
-  
-  h2 {
+}
+
+h2 {
     font-family: var(--font-family);
     font-size: var(--font-size-Title);
-  }
-  
-  p {
+}
+
+p {
     font-family: var(--font-family);
     font-size: var(--font-size-p);
-  }
-  
-  a {
+}
+
+a {
     text-decoration: none;
-  
     &:hover {
-      color: var(--colorHardPink);
+        color: var(--colorHardPink);
     }
-  }
-  
-  .txtBigger {
+}
+
+.txtBigger {
     font-size: var(--font-size-bigger);
-  }
-  
-  .txtprimary {
+}
+
+.txtprimary {
     font-family: var(--font-family);
     font-size: var(--font-size-medium);
-  }
-  
-  .txtSecond {
+}
+
+.txtSecond {
     font-family: var(--font-family);
     font-size: var(--font-size-small);
-  }
-  
-  .txtBold {
+}
+
+.txtBold {
     font-weight: var(--font-weight-bold);
-  }
-  
-  .txtSemibold {
+}
+
+.txtSemibold {
     font-weight: var(--font-weight-Semibold);
-  }
-  
-  .txtRegular {
+}
+
+.txtRegular {
     font-weight: var(--font-weight-regular);
-  }
-  
-  .txtBlack {
+}
+
+.txtBlack {
     color: var(--colorBlack);
-  }
-  
-  .txtWhite {
+}
+
+.txtWhite {
     color: var(--colorWhite);
-  }
-  
-  .txtUpper {
+}
+
+.txtUpper {
     text-transform: var(--text-transform);
-  }
-  
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  
-  /* 3. CONTAINERS
-   ============================= */
-  
-  .wrapContent {
+}
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* 3. CONTAINERS
+  ============================= */
+
+.wrapContent {
     width: 80%;
     max-width: 1000px;
     text-align: center;
     margin: auto;
     padding: 50px 0;
-  }
-  
-  .wrapFlex {
+}
+
+.wrapFlex {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     padding: 50px 0 0 0;
-  }
-  
-  .txtContainer {
+}
+
+.txtContainer {
     width: 100%;
     max-width: 637px;
     margin: 0 auto;
     padding: 65px 0 0 0;
-  }
-  
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  
-  /* 4. BUTTONS GENERAL
-   ============================= */
-  
-  .buttonPrimary {
+}
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* 4. BUTTONS GENERAL
+  ============================= */
+
+.buttonPrimary {
     background-color: var(--colorHardPink);
     padding: 13px 31px;
     border-radius: 22px;
@@ -390,23 +463,34 @@ html {
     border: none;
     cursor: pointer;
     margin: 25px 0 0 0;
-  
     &:hover {
-      opacity: 0.9;
+        opacity: 0.9;
     }
-  }
-  
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  
-  /* 5. HEADER PAGE
-   ============================= */
-  
-  .headerPage {
+}
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* 5. HEADER PAGE
+  ============================= */
+
+.headerPage {
     width: 100%;
     max-width: 1200px;
     margin: auto;
@@ -414,12 +498,13 @@ html {
     justify-content: space-between;
     align-items: center;
     padding: 30px 0;
-  }
-  
-  /* nav
-   ============================= */
-  
-  .logo {
+}
+
+
+/* nav
+  ============================= */
+
+.logo {
     text-indent: -99999px;
     width: 162px;
     height: 32px;
@@ -428,32 +513,31 @@ html {
     margin: 0;
     padding: 0;
     background-size: cover;
-  }
-  
-  .menuPrimary {
+}
+
+.menuPrimary {
     display: flex;
     justify-content: space-between;
     padding: 0;
-  
-    > li {
-      padding: 0 20px;
+    >li {
+        padding: 0 20px;
     }
-  }
-  
-  .menu-btn {
+}
+
+.menu-btn {
     display: none;
-  }
-  
-  .menu-icon {
+}
+
+.menu-icon {
     cursor: pointer;
     position: absolute;
     user-select: none;
     top: 45px;
     left: 22px;
     display: none;
-  }
-  
-  .naviconTop {
+}
+
+.naviconTop {
     display: block;
     width: 20px;
     height: 2px;
@@ -461,86 +545,99 @@ html {
     border-radius: 2px;
     position: absolute;
     top: -2px;
-  }
-  
-  .navicon {
+}
+
+.navicon {
     display: block;
     width: 13px;
     height: 2px;
     background-color: var(--colorWhite);
     border-radius: 2px;
     margin: 4px 0;
-  }
-  
-  .naviconBottom {
+}
+
+.naviconBottom {
     display: block;
     width: 18px;
     height: 2px;
     background-color: var(--colorWhite);
     border-radius: 2px;
     position: absolute;
-  }
-  
-  .headerPage .menu-btn:checked + .menu-icon {
+}
+
+.headerPage .menu-btn:checked+.menu-icon {
     .navicon {
-      background: transparent;
+        background: transparent;
     }
-  
     .naviconTop {
-      transform: rotate(-45deg);
-      top: 5px;
+        transform: rotate(-45deg);
+        top: 5px;
     }
-  
     .naviconBottom {
-      transform: rotate(45deg);
-      width: 20px;
-      top: 5px;
+        transform: rotate(45deg);
+        width: 20px;
+        top: 5px;
     }
-  }
-  
-  /* TOP HERO
-   ============================= */
-  
-  .imgHero {
+}
+
+
+/* TOP HERO
+  ============================= */
+
+.imgHero {
     background: url("images/headphones_hero_1.jpg") center center no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100vh;
     min-height: 800px;
     position: relative;
-  }
-  
-  .info-header {
+}
+
+.info-header {
     position: absolute;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -30%);
-  }
-  
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  
-  /* 6. WHAT WE DO SECTION
-   ============================= */
-  
-  /* wrap article
-   ============================= */
-  
-  .wrapArticle {
+}
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* 6. WHAT WE DO SECTION
+  ============================= */
+
+
+/* wrap article
+  ============================= */
+
+.wrapArticle {
     width: 207px;
     height: 180px;
     text-align: center;
     margin: auto;
     padding: 0 0 130px 0;
-  }
-  
-  /* Icons */
-  
-  [class^="hbicon-"], [class*=" hbicon-"] {
+}
+
+
+/* Icons */
+
+[class^="hbicon-"],
+[class*=" hbicon-"] {
     font-family: 'icomoon' !important;
     font-style: normal;
     font-weight: normal;
@@ -551,73 +648,75 @@ html {
     font-size: 100px;
     color: var(--colorHardPink);
     transition: all linear 0.5s;
-  }
-  
-  .hbicon-sound:before {
+    cursor: pointer;
+}
+
+.hbicon-sound:before {
     content: "\e90e";
-  }
-  
-  .hbicon-video:before {
+}
+
+.hbicon-video:before {
     content: "\e910";
-  }
-  
-  .hbicon-music:before {
+}
+
+.hbicon-music:before {
     content: "\e90d";
-  }
-  
-  .hbicon-hearing:before {
+}
+
+.hbicon-hearing:before {
     content: "\e909";
-  }
-  
-  .hbicon-sound:hover, .hbicon-video:hover, .hbicon-music:hover, .hbicon-hearing:hover {
+}
+
+.hbicon-sound:hover,
+.hbicon-video:hover,
+.hbicon-music:hover,
+.hbicon-hearing:hover {
     color: cyan;
     font-size: 115px;
-  }
-  
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  
-  /* 7. OUR RESULTS SECTION
-   ============================= */
-  
-  /* back content
-   ============================= */
-  
-  .heroSection {
-    background: url("images/headphones_hero_2.jpg") center center no-repeat;
+}
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* 7. OUR RESULTS SECTION
+  ============================= */
+
+
+/* back content
+  ============================= */
+
+.heroSection {
+    background: url("images/headphones_hero_2.jpg") center center no-repeat var(--colorDeepBlue);
     background-size: cover;
     width: 100%;
-    height: 100vh;
-    min-height: 650px;
-    position: relative;
-  }
-  
-  /* Txt content
-   ============================= */
-  
-  .info-heroSection {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -30%);
-  }
-  
-  /* article polygon content
-   ============================= */
-  
-  .polygon {
-    margin: 50px auto;
-    position: absolute;
-    top: 70px;
+    padding: 100px 0;
+}
+
+
+/* article polygon content
+  ============================= */
+
+.polygon {
     justify-content: space-evenly;
-    top: 100%;
-  }
-  
-  .backPolygon {
+}
+
+.backPolygon {
     background-color: #FF6565;
     background-size: 100%;
     width: 190px;
@@ -627,34 +726,45 @@ html {
     justify-content: center;
     align-items: center;
     clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-    transition: all linear 0.7s;
-  
+    transition: all linear 0.3s;
+    cursor: pointer;
     &:hover {
-      background-color: cyan;
-      margin-top: -20px;
+        background-color: cyan;
+        margin-top: -20px;
     }
-  }
-  
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  
-  /* 8. CONTACT SECTION
-   ============================= */
-  
-  .wrapForm {
+}
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* 8. CONTACT SECTION
+  ============================= */
+
+.wrapForm {
     width: 335px;
     margin: 50px auto;
-  
-    > h1 {
-      padding: 0 0 25px 0;
+    >h1 {
+        padding: 0 0 25px 0;
     }
-  }
-  
-  .inputForm {
+}
+
+.inputForm {
     width: 100%;
     border: none;
     border-bottom: 1px solid gray;
@@ -664,9 +774,9 @@ html {
     color: var(--colorBlack);
     margin: 30px 0;
     padding: 0 0 15px 0;
-  }
-  
-  .textAreaForm {
+}
+
+.textAreaForm {
     width: 100%;
     border: none;
     border-bottom: 1px solid gray;
@@ -675,234 +785,200 @@ html {
     font-weight: var(--font-weight-Semibold);
     color: var(--colorBlack);
     margin: 25px 0 30px 0;
-  }
-  
-  .inputForm::placeholder, .textAreaForm::placeholder {
+}
+
+.inputForm::placeholder,
+.textAreaForm::placeholder {
     font-family: var(--font-family);
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-Semibold);
     color: var(--colorBlack);
-  }
-  
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  
-  /* 9. FOOTER
-   ============================= */
-  
-  .wrapFooter {
+}
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* 9. FOOTER
+  ============================= */
+
+.wrapFooter {
     width: 100%;
     height: 249px;
     background-color: var(--colorDeepBlue);
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .hbicon-facebook::before {
+}
+
+.hbicon-facebook::before {
     content: "\e908";
-  }
-  
-  .hbicon-twitter::before {
+}
+
+.hbicon-twitter::before {
     content: "\e90f";
-  }
-  
-  .hbicon-instagram::before {
+}
+
+.hbicon-instagram::before {
     content: "\e90a";
-  }
-  
-  .beSocial {
+}
+
+.beSocial {
     display: flex;
     width: 130px;
     justify-content: space-between;
-  
-    [class^="hbicon-"], [class*=" hbicon-"] {
-      font-family: 'icomoon' !important;
-      font-style: normal;
-      font-weight: normal;
-      font-variant: normal;
-      text-transform: none;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      font-size: 30px;
-      color: var(--colorWhite);
+    [class^="hbicon-"],
+    [class*=" hbicon-"] {
+        font-family: 'icomoon' !important;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        font-size: 30px;
+        color: var(--colorWhite);
     }
-  }
-  
-  .wrapFooter > p {
+}
+
+.wrapFooter>p {
     opacity: 0.35;
     padding: 0 0 40px 0;
-  }
-  
-  .social {
+}
+
+.social {
     display: flex;
     justify-content: space-between;
     padding: 0 30px;
-  }
-  
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  /* =========================================================================== */
-  
-  /* MEDIA QUERIES
-   ============================= */
-  
-  @media only screen and (max-width: 1400px) {
-      /* HEADER PAGE
+}
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* MEDIA QUERIES
   ============================= */
-  
+
+@media only screen and (max-width: 1400px) {
+    /* HEADER PAGE
+  ============================= */
     .headerPage {
-      max-width: 1000px;
+        max-width: 1000px;
     }
-  
-      /* TOP HERO
+    /* TOP HERO
   ============================= */
-  
     .imgHero {
-      position: relative;
-      background: url("images/headphones_hero_1.jpg") center 0 no-repeat;
+        position: relative;
+        background: url("images/headphones_hero_1.jpg") center 0 no-repeat;
     }
-  
     .info-header {
-      top: 55%;
+        top: 56%;
     }
-  }
-  
-  @media only screen and (max-width: 768px) {
-      /* HEADER PAGE
+}
+
+@media only screen and (max-width: 768px) {
+    /* HEADER PAGE
   ============================= */
-  
     .headerPage {
-      max-width: 635px;
+        max-width: 635px;
     }
-  
-      /* nav
+    /* nav
   ============================= */
-  
-    .menuPrimary > li:last-child {
-      padding: 0 0 0 20px;
+    .menuPrimary>li:last-child {
+        padding: 0 0 0 20px;
     }
-  
-      /* OUR RESULTS SECTION
+    /* OUR RESULTS SECTION
   ============================= */
-  
-    /* back content
-    ============================= */
-  
-    .heroSection {
-      min-height: 876px;
-    }
-  
-    .info-heroSection {
-      top: 20%;
-    }
-  
     /* content article
-    ============================= */
-  
+  ============================= */
     .backPolygon {
-      margin: 20px;
+        margin: 20px;
+        &:hover {
+            margin-top: -10px;
+        }
     }
-  
-    .polygon {
-      margin: 30px auto;
-      top: 70%;
-    }
-  }
-  
-  @media only screen and (max-width: 480px) {
-      /* HEADER PAGE
+}
+
+@media only screen and (max-width: 480px) {
+    /* HEADER PAGE
   ============================= */
-  
     .info-header {
-      top: 50%;
+        top: 50%;
     }
-  
     .headerPage {
-      flex-direction: column;
+        flex-direction: column;
     }
-  
-      /* nav
+    /* nav
   ============================= */
-  
     nav {
-      display: none;
-      width: 100%;
+        display: none;
+        width: 100%;
     }
-  
     .menuPrimary {
-      flex-direction: column;
+        flex-direction: column;
     }
-  
-    .menu-btn:checked ~ nav {
-      display: flex;
-      justify-content: center;
+    .menu-btn:checked~nav {
+        display: flex;
+        justify-content: center;
     }
-  
-    .menuPrimary > li {
-      padding: 15px 0 0 0;
-  
-      &:last-child {
+    .menuPrimary>li {
         padding: 15px 0 0 0;
-      }
+        &:last-child {
+            padding: 15px 0 0 0;
+        }
     }
-  
     .menu-icon {
-      display: block;
+        display: block;
     }
-  
-   /* TOP HERO
+    /* TOP HERO
   ============================= */
-  
     .imgHero {
-      background: url("images/headphones_hero_1.jpg") center center no-repeat;
-      background-size: cover;
-      width: 100%;
-      height: 100vh;
-      min-height: 869px;
-      position: relative;
+        background: url("images/headphones_hero_1.jpg") center center no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        min-height: 869px;
+        position: relative;
     }
-  
-      /* OUR RESULTS SECTION
+    /* FOOTER
   ============================= */
-  
-    /* back content
-    ============================= */
-  
-    .heroSection {
-      min-height: 1491px;
-    }
-  
-    /* content article
-    ============================= */
-  
-    .info-heroSection {
-      top: 15%;
-    }
-  
-    .polygon {
-      top: 75%;
-    }
-  
-      /* FOOTER
-  ============================= */
-  
     /* social
-    ============================= */
-  
+  ============================= */
     .social {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
-  
     .beSocial {
-      padding: 40px 0 0 0;
+        padding: 40px 0 0 0;
     }
-  }
+}

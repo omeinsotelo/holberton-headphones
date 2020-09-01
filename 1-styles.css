@@ -1,8 +1,10 @@
 /* SUMMARY
 1. GLOBAL
-2. 
-3. 
-4. 
+2. GENERAL
+3. CONTAINERS
+4. BUTTONS GENERAL
+5. HEADER PAGE
+6. WHAT WE DO SECTION
 */
 
 
@@ -196,7 +198,7 @@ template {
 }
 
 
-/* GENERAL
+/* 2. GENERAL
   ============================= */
 
 html {
@@ -218,6 +220,7 @@ img {
 .txtCenter {
     text-align: center;
 }
+
 .txtRight {
     text-align: right;
 }
@@ -229,6 +232,7 @@ img {
 .txtJustify {
     text-align: justify;
 }
+
 ul li {
     list-style: none;
 }
@@ -237,76 +241,96 @@ ul li {
     line-height: 26px;
 }
 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
 
 
 /* Variables
   ============================= */
 
  :root {
-     --colorWhite: #ffffff;
-     --colorBlack: #000000;
-     --colorHardPink: #FF6565;
-     --font-family: 'Source Sans Pro', sans-serif;
-     --font-size-bigger: 46px;
-     --font-size-small: 12px;
-     --font-size-medium: 14px;
-     --font-size-p: 16px;
-     --font-size-Title-primary: 32px;
-     --font-size-Title: 18px;
-     --font-weight-regular: 400;
-     --font-weight-Semibold: 600;
-     --font-weight-bold: 700;
-     --line-height-txt: 26px;
-     --text-transform: uppercase;
-     
+    --colorWhite: #ffffff;
+    --colorBlack: #000000;
+    --colorHardPink: #FF6565;
+    --colorDeepBlue: #071629;
+    --font-family: 'Source Sans Pro', sans-serif;
+    --font-size-bigger: 46px;
+    --font-size-small: 12px;
+    --font-size-medium: 14px;
+    --font-size-p: 16px;
+    --font-size-Title-primary: 32px;
+    --font-size-Title: 18px;
+    --font-weight-regular: 400;
+    --font-weight-Semibold: 600;
+    --font-weight-bold: 700;
+    --line-height-txt: 26px;
+    --text-transform: uppercase;
+}
 
- }
 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
+/* =========================================================================== */
 
-  /* ICONOS
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* ICONOS
   ============================= */
 
- @font-face {
+@font-face {
     font-family: 'icomoon';
-    src:  url('holberton_school-icon/fonts/holberton_school-icon.eot');
-    src:  url('holberton_school-icon/fonts/holberton_school-icon.eot') format('embedded-opentype'),
-      url('holberton_school-icon/fonts/holberton_school-icon.ttf') format('truetype'),
-      url('holberton_school-icon/fonts/holberton_school-icon.woff') format('woff'),
-      url('holberton_school-icon/fonts/holberton_school-icon.svg') format('svg');
+    src: url('holberton_school-icon/fonts/holberton_school-icon.eot');
+    src: url('holberton_school-icon/fonts/holberton_school-icon.eot') format('embedded-opentype'), url('holberton_school-icon/fonts/holberton_school-icon.ttf') format('truetype'), url('holberton_school-icon/fonts/holberton_school-icon.woff') format('woff'), url('holberton_school-icon/fonts/holberton_school-icon.svg') format('svg');
     font-weight: normal;
     font-style: normal;
-  } 
+}
 
- /* TXT GENERAL
+
+/* TXT GENERAL
   ============================= */
 
 @font-face {
     font-family: 'SPIN CYCLE';
     src: local('fonts/spincycle_3d_ot.otf') format('opentype');
     src: local('fonts/spincycle_ot.otf') format('opentype');
-  }
+}
 
 h1 {
     font-family: var(--font-family);
     font-size: var(--font-size-Title-primary);
-  }
+}
 
 h2 {
     font-family: var(--font-family);
     font-size: var(--font-size-Title);
-  }
+}
 
 p {
     font-family: var(--font-family);
@@ -316,6 +340,7 @@ p {
 a {
     text-decoration: none;
 }
+
 a:hover {
     color: var(--colorHardPink);
 }
@@ -359,23 +384,33 @@ a:hover {
 }
 
 
+/* =========================================================================== */
 
 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
+/* =========================================================================== */
 
- /* CONTAINERS
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* 3. CONTAINERS
   ============================= */
 
-  .wrapContent {
+.wrapContent {
     width: 80%;
     max-width: 1000px;
     text-align: center;
     margin: auto;
+    padding: 50px 0;
 }
 
 .wrapFlex {
@@ -391,14 +426,26 @@ a:hover {
     padding: 65px 0;
 }
 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
 
- /* BUTTONS GENERAL
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* 4. BUTTONS GENERAL
   ============================= */
 
 .buttonPrimary {
@@ -409,23 +456,36 @@ a:hover {
     font-size: var(--font-size-medium);
     border: none;
     cursor: pointer;
-    -webkit-box-shadow: 10px 10px 27px -2px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 27px -2px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 27px -2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 27px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 27px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 27px -2px rgba(0, 0, 0, 0.75);
     margin: 25px 0 0 0;
 }
+
 .buttonPrimary:hover {
     opacity: 0.9;
 }
 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
 
- /* HEADER PAGE
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* 5. HEADER PAGE
   ============================= */
 
 .headerPage {
@@ -438,7 +498,8 @@ a:hover {
     padding: 30px 0;
 }
 
- /* nav
+
+/* nav
   ============================= */
 
 .logo {
@@ -458,7 +519,7 @@ a:hover {
     padding: 0;
 }
 
-.menuPrimary > li {
+.menuPrimary>li {
     padding: 0 20px;
 }
 
@@ -494,7 +555,6 @@ a:hover {
     margin: 4px 0;
 }
 
-
 .naviconBottom {
     display: block;
     width: 18px;
@@ -504,37 +564,34 @@ a:hover {
     position: absolute;
 }
 
-
-.headerPage .menu-btn:checked + .menu-icon .navicon {
+.headerPage .menu-btn:checked+.menu-icon .navicon {
     background: transparent;
 }
 
-.headerPage .menu-btn:checked + .menu-icon .naviconTop {
+.headerPage .menu-btn:checked+.menu-icon .naviconTop {
     transform: rotate(-45deg);
     top: 5px;
-    
 }
 
-.headerPage .menu-btn:checked + .menu-icon .naviconBottom {
+.headerPage .menu-btn:checked+.menu-icon .naviconBottom {
     transform: rotate(45deg);
     width: 20px;
     top: 5px;
-    
 }
 
- /* TOP HERO
+
+/* TOP HERO
   ============================= */
 
 .imgHero {
     background: url("images/headphones_hero_1.jpg") center center no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100vh;
     min-height: 800px;
     position: relative;
 }
 
-.info-header{
+.info-header {
     position: absolute;
     top: 60%;
     left: 50%;
@@ -542,17 +599,29 @@ a:hover {
 }
 
 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
+/* =========================================================================== */
 
- /* WHAT WE DO SECTION
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* 6. WHAT WE DO SECTION
   ============================= */
 
- /* wrap article
+
+/* wrap article
   ============================= */
 
 .wrapArticle {
@@ -563,9 +632,11 @@ a:hover {
     padding: 0 0 130px 0;
 }
 
-  /* Icons */
 
-  [class^="hbicon-"], [class*=" hbicon-"] {
+/* Icons */
+
+[class^="hbicon-"],
+[class*=" hbicon-"] {
     font-family: 'icomoon' !important;
     font-style: normal;
     font-weight: normal;
@@ -575,119 +646,107 @@ a:hover {
     -webkit-font-smoothing: antialiased;
     font-size: 100px;
     color: var(--colorHardPink);
-  }
+}
 
-  .hbicon-sound:before {
+.hbicon-sound:before {
     content: "\e90e";
-  }
-  
-  .hbicon-video:before {
+}
+
+.hbicon-video:before {
     content: "\e910";
-  }
-  
-  .hbicon-music:before {
+}
+
+.hbicon-music:before {
     content: "\e90d";
-  }
-  
-  .hbicon-hearing:before {
+}
+
+.hbicon-hearing:before {
     content: "\e909";
-  }
+}
 
 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
- /* =========================================================================== */ 
+/* =========================================================================== */
 
- /* MEDIA QUERIES
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* MEDIA QUERIES
   ============================= */
 
-
 @media only screen and (max-width: 1400px) {
-
-        /* HEADER PAGE
+    /* HEADER PAGE
     ============================= */
-
     .headerPage {
         max-width: 1000px;
-
     }
-        /* TOP HERO
+    /* TOP HERO
     ============================= */
-
     .imgHero {
         position: relative;
         background: url("images/headphones_hero_1.jpg") center 0 no-repeat;
-        
     }
-
-    .info-header{
-        top: 55%;
+    .info-header {
+        top: 56%;
     }
 }
 
 @media only screen and (max-width: 768px) {
-
-        /* HEADER PAGE
+    /* HEADER PAGE
     ============================= */
-
     .headerPage {
         max-width: 635px;
         padding: 10px 0;
     }
-
-        /* nav
+    /* nav
     ============================= */
-
-    .menuPrimary > li:last-child {
+    .menuPrimary>li:last-child {
         padding: 0 0 0 20px;
     }
-
 }
 
-
 @media only screen and (max-width: 480px) {
-
-        /* HEADER PAGE
+    /* HEADER PAGE
     ============================= */
-
     .headerPage {
         flex-direction: column;
     }
-
-        /* nav
+    /* nav
     ============================= */
     nav {
         display: none;
         width: 100%;
     }
-
     .menuPrimary {
         flex-direction: column;
     }
-
-    .menu-btn:checked ~ nav {
+    .menu-btn:checked~nav {
         display: flex;
         justify-content: center;
     }
-
-    .menuPrimary > li {
+    .menuPrimary>li {
         padding: 15px 0 0 0;
     }
-
-    .menuPrimary > li:last-child {
+    .menuPrimary>li:last-child {
         padding: 15px 0 0 0;
     }
-
     .menu-icon {
         display: block;
     }
-
-     /* TOP HERO
+    /* TOP HERO
   ============================= */
-
     .imgHero {
         background: url("images/headphones_hero_1.jpg") center center no-repeat;
         background-size: cover;
@@ -696,5 +755,4 @@ a:hover {
         min-height: 869px;
         position: relative;
     }
-
 }
